@@ -17,7 +17,7 @@ public class ZagakuDemoKit : NSObject {
 
     //// Drawing Methods
 
-    @objc dynamic public class func drawBasicShape(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 300, height: 300), resizing: ResizingBehavior = .aspectFit) {
+    @objc dynamic public class func drawBasicShape(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 300, height: 300), resizing: ResizingBehavior = .aspectFit, rotation: CGFloat = 0) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
@@ -29,20 +29,26 @@ public class ZagakuDemoKit : NSObject {
 
 
         //// Star Drawing
+        context.saveGState()
+        context.translateBy(x: 150, y: 150)
+        context.rotate(by: -rotation * CGFloat.pi/180)
+
         let starPath = UIBezierPath()
-        starPath.move(to: CGPoint(x: 150, y: 0))
-        starPath.addLine(to: CGPoint(x: 202.9, y: 77.19))
-        starPath.addLine(to: CGPoint(x: 292.66, y: 103.65))
-        starPath.addLine(to: CGPoint(x: 235.6, y: 177.81))
-        starPath.addLine(to: CGPoint(x: 238.17, y: 271.35))
-        starPath.addLine(to: CGPoint(x: 150, y: 240))
-        starPath.addLine(to: CGPoint(x: 61.83, y: 271.35))
-        starPath.addLine(to: CGPoint(x: 64.4, y: 177.81))
-        starPath.addLine(to: CGPoint(x: 7.34, y: 103.65))
-        starPath.addLine(to: CGPoint(x: 97.1, y: 77.19))
+        starPath.move(to: CGPoint(x: 0, y: -150))
+        starPath.addLine(to: CGPoint(x: 52.9, y: -72.81))
+        starPath.addLine(to: CGPoint(x: 142.66, y: -46.35))
+        starPath.addLine(to: CGPoint(x: 85.6, y: 27.81))
+        starPath.addLine(to: CGPoint(x: 88.17, y: 121.35))
+        starPath.addLine(to: CGPoint(x: 0, y: 90))
+        starPath.addLine(to: CGPoint(x: -88.17, y: 121.35))
+        starPath.addLine(to: CGPoint(x: -85.6, y: 27.81))
+        starPath.addLine(to: CGPoint(x: -142.66, y: -46.35))
+        starPath.addLine(to: CGPoint(x: -52.9, y: -72.81))
         starPath.close()
         UIColor.gray.setFill()
         starPath.fill()
+
+        context.restoreGState()
         
         context.restoreGState()
 
