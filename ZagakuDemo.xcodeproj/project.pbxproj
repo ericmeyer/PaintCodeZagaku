@@ -13,6 +13,8 @@
 		07A69AAF206BB91800995624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A69AAE206BB91800995624 /* Assets.xcassets */; };
 		07A69AB2206BB91800995624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A69AB0206BB91800995624 /* LaunchScreen.storyboard */; };
 		07A69ABD206BB91800995624 /* ZagakuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A69ABC206BB91800995624 /* ZagakuDemoTests.swift */; };
+		07A69AD0206BDEC700995624 /* ZagakuDemoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A69ACF206BDEC700995624 /* ZagakuDemoKit.swift */; };
+		07A69AD2206BDEE200995624 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A69AD1206BDEE200995624 /* StarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		07A69AB8206BB91800995624 /* ZagakuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZagakuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A69ABC206BB91800995624 /* ZagakuDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZagakuDemoTests.swift; sourceTree = "<group>"; };
 		07A69ABE206BB91800995624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A69ACF206BDEC700995624 /* ZagakuDemoKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZagakuDemoKit.swift; sourceTree = "<group>"; };
+		07A69AD1206BDEE200995624 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		07A69AA6206BB91800995624 /* ZagakuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				07A69ACF206BDEC700995624 /* ZagakuDemoKit.swift */,
 				07A69AB3206BB91800995624 /* Info.plist */,
 				07A69ACC206BD9B500995624 /* BasicExample */,
 				07A69ACB206BD99C00995624 /* SupportingFiles */,
@@ -106,6 +111,7 @@
 		07A69ACC206BD9B500995624 /* BasicExample */ = {
 			isa = PBXGroup;
 			children = (
+				07A69AD1206BDEE200995624 /* StarView.swift */,
 				07A69AA9206BB91800995624 /* WelcomeViewController.swift */,
 				07A69AAB206BB91800995624 /* Main.storyboard */,
 			);
@@ -216,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A69AAA206BB91800995624 /* WelcomeViewController.swift in Sources */,
+				07A69AD0206BDEC700995624 /* ZagakuDemoKit.swift in Sources */,
+				07A69AD2206BDEE200995624 /* StarView.swift in Sources */,
 				07A69AA8206BB91800995624 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

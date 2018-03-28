@@ -24,7 +24,7 @@
                                     <action selector="rotateView:" destination="BYZ-38-t0r" eventType="valueChanged" id="qIQ-UX-a4k"/>
                                 </connections>
                             </slider>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VX-ys-pY3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VX-ys-pY3" customClass="StarView" customModule="ZagakuDemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="90" width="375" height="577"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
